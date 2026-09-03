@@ -71,7 +71,21 @@ footer a{color:var(--acc);text-decoration:none}
 .tem-meta ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .tem-meta li{padding-left:14px;position:relative}
 .tem-meta li:before{content:"\00b7";position:absolute;left:1px;color:var(--accB);font-weight:700}
-</style></head><body>
+</style>
+<style id="cco-curso-sep26">
+.cc-sec{padding:clamp(3rem,6vw,5rem) 0;border-top:1px solid var(--rule)}
+.cc-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,4vw,54px);align-items:start}
+@media(max-width:860px){.cc-grid{grid-template-columns:1fr}}
+.cc-h{font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--acc);margin:0 0 14px}
+.cc-li{list-style:none;padding:0;margin:0}
+.cc-li li{font-family:'Lora',Georgia,serif;font-size:15.5px;line-height:1.7;color:var(--ink);padding:11px 0 11px 26px;position:relative;border-bottom:1px solid var(--rule)}
+.cc-li li:before{content:"";position:absolute;left:0;top:21px;width:13px;height:1px;background:var(--acc)}
+.cc-li li:last-child{border-bottom:none}
+.cc-p{font-family:'Lora',Georgia,serif;font-size:16px;line-height:1.75;color:var(--ink);margin:0}
+.cc-card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:clamp(22px,3vw,32px)}
+.cc-obj{font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--acc);display:block;margin-bottom:10px}
+</style>
+</head><body>
 
 <header class="hero">
  <div class="serie">RiskMathics Financial Institute · Curso Ejecutivo</div>
@@ -90,7 +104,7 @@ footer a{color:var(--acc);text-decoration:none}
 <section class="sec" id="temario"><div class="wrap">
  <div class="kicker">Contenido del programa</div>
  <h2 class="sec-title">Qué dominarás, sesión por sesión.</h2>
- <p class="sec-sub">Diseñar y ejecutar stress testing empresarial de crédito: construcción de escenarios macro, modelos de pérdida bajo estrés, reverse stress testing e integración con ICAAP y planeación de capital. Traducir el estrés en decisiones de apetito y límites.</p>
+ <p class="sec-sub"><span class="cc-obj">Objetivo de aprendizaje</span>Diseñar y ejecutar stress testing empresarial de crédito: construcción de escenarios macro, modelos de pérdida bajo estrés, reverse stress testing e integración con ICAAP y planeación de capital. Traducir el estrés en decisiones de apetito y límites.</p>
  <div class="tem-grid">
   <div><h3 class="tem-h">Sesiones</h3>
    <ol class="tem-sem"><li><span class="tw">S1</span><span><span class="tem-st">Diseño de escenarios</span><ul class="tem-sub"><li>Escenarios macro (base, adverso, severo), narrativa y variables.</li></ul></span></li><li><span class="tw">S2</span><span><span class="tem-st">Modelos de pérdida bajo estrés</span><ul class="tem-sub"><li>Vínculo macro a PD/LGD; proyección de pérdidas y provisiones.</li></ul></span></li><li><span class="tw">S3</span><span><span class="tem-st">Reverse stress testing e integración</span><ul class="tem-sub"><li>Reverse stress, capital planning e integración con ICAAP.</li></ul></span></li><li><span class="tw">S4</span><span><span class="tem-st">Marcos CCAR / DFAST / EBA y taller</span><ul class="tem-sub"><li>Estándares globales, gobernanza del ejercicio; caso integrador.</li></ul></span></li></ol></div>
@@ -103,7 +117,7 @@ footer a{color:var(--acc);text-decoration:none}
  <div class="f"><div class="n">USD $1,450 + TAX</div><div class="l">Inversión</div></div>
  </div>
  
-</section>
+</section><section class="sec cc-sec" id="paraquien"><div class="wrap"><div class="cc-grid"><div><div class="cc-h">Para qui&eacute;n es este curso</div><ul class="cc-li"><li>CCO / CRO, stress testing, capital y planeación.</li><li>Áreas de modelado macro, ICAAP y riesgo de crédito.</li><li>Tesorería, ALM y planeación financiera.</li><li>Reguladores y validadores.</li></ul></div><div class="cc-card"><div class="cc-h">Por qu&eacute; importa</div><p class="cc-p">El stress testing es donde el CCO demuestra que la institución sobrevive el próximo shock. CCAR, EBA e ICAAP no son ejercicios de cumplimiento: son la prueba de resiliencia que exigen el Board y el regulador.</p></div></div></div></section>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 <script>
 const RM_CFG={id:"stresstestingdesign",folleto:"",paypal:"https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=stresstestingdesign",stripe:"https://buy.stripe.com/3cI7sD0V14mA4op7Z72RA02"};
